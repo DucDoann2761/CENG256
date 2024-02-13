@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewpoint" content="width=device-width, intial-scale=1.0">
+    <title>Feedback</title>
+    <script type="text/javascript" src="https://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="functions.js"></script>
+    <script type="text/javascript" src="feedback.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <section class="section-header">
+        <nav>
+            <a href="home.html"><img src="imgs/logo.png" alt="Company Logo"></a>
+            <div class="menu-links" id="menuLinks">
+                <i class="fa fa-times" id="hideMenu" alt="X icon"></i>
+                <ul>
+                    <li><a href="home.html" class="menu-btn">Home</a></li>
+                    <li><a href="info.html" class="menu-btn">Info Page</a></li>
+                    <li><a href="about.html" class="menu-btn">About Us</a></li>
+                    <li><a href="feedback.html" class="menu-btn">Feedback</a></li>
+                    <li><a href="login.html" class="login-btn">LOGIN</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" id="showMenu" alt="menu bar icon"></i>
+        </nav>
+        <hr>
+    </section>
+
+    <section class="section-feedback">
+        <h1>Feedback Form</h1>
+        <p>Please provide your feedback below: </p>
+    </section>
+
+    <div class="feedback">
+        <form name="feedback" action="feedback_success.html" method="get">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="ash.ketchum@pok&eacute;.com" required>
+            <label class="error" for="email" id="email_error">This field is required.</label>
+            <br>
+            <div id="checkboxes">
+                <label for="checkboxes" id="checkboxes">What game did you try?</label>
+
+                <input type="checkbox" id="game1" name="game1" class="options">
+                <label class="options" for="game1">Diety of Peace</label><br>
+
+                <input type="checkbox" id="game2" name="game2" class="options">
+                <label class="options" for="game2">First Fantasy VII</label><br>
+
+                <input type="checkbox" id="game3" name="game3" class="options">
+                <label class="options" for="game3">Close Cry 6</label><br>
+
+                <input type="checkbox" id="game4" name="game4" class="options">
+                <label class="options" for="game4">Outerlands 3</label><br>
+
+                <input type="checkbox" id="game5" name="game5" class="options">
+                <label class="options" for="game5">Two Weeks</label><br>
+
+                <input type="checkbox" id="game6" name="game6" class="options">
+                <label class="options" for="game6">Warfront V</label><br>
+
+                <input type="checkbox" id="game7" name="game7" class="options">
+                <label class="options" for="game7">Life Lightning</label><br>
+
+                <input type="checkbox" id="game8" name="game8" class="options">
+                <label class="options" for="game8">Small Theft Auto V</label><br>
+
+                <input type="checkbox" id="game9" name="game9" class="options">
+                <label class="options" for="game9">Block Wars</label><br>
+
+                <input type="checkbox" id="game10" name="game10" class="options">
+                <label class="options" for="game10">Sensei</label><br>
+                <label class="error" for="options" id="checkboxes_error">Please select at least one game.</label>
+            </div>
+
+            <br><br>
+
+            <label for="text1">What, if any, areas of the game did you enjoy?</label>
+            <input type="text" id="text1" name="text1">
+            <br>
+
+            <label for="text2">What, if any, areas of the game did you not enjoy?</label>
+            <input type="text" id="text2" name="text2">
+            <br>
+
+            <label for="rate">How likely are you to recommended our games to your peers? (1-10)</label>
+            <input type="range" id="rate" name="rate" min="0" max="10">
+            <br>
+
+            <label for="dropdown">For future development, what main genre of games would you like us to develop?</label>
+            <select name="dropdown" id="dropdown">
+                <option value="value1">Select One</option>
+                <option value="value2">Sandbox</option>
+                <option value="value3">Real-Time Strategy</option>
+                <option value="value4">Shooters</option>
+                <option value="value5">Multiplayer</option>
+                <option value="value6">Role-Playing</option>
+                <option value="value7">Simulation</option>
+                <option value="value8">Puzzle</option>
+                <option value="value9">Action-Adventure</option>
+                <option value="value10">Survival</option>
+                <option value="value11">Platformer</option>
+            </select>
+            <br><br>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob">
+            <label class="error" for="dob" id="dob_error">This field is required.</label>
+
+            <label for="comment" id="comment">Additional Comments:</label>
+            <textarea name="comment"></textarea>
+
+            <input type="reset" value="Reset" class="button">
+            <input type="submit" value="Submit FeedBack" class="button" id="feedback_btn_submit">
+
+
+        </form>
+    </div>
+
+    <section class="section-footer">
+        <div class="icons">
+            <i class="fa fa-facebook" alt="facebook icon"></i>
+            <i class="fa fa-instagram" alt="instagram icon"></i>
+            <i class="fa fa-twitter" alt="twitter icon"></i>
+            <i class="fa fa-linkedin" alt="linkedin icon"></i>
+            <i class="fa fa-envelope" alt="mail icon"></i>
+        </div>
+        <div class="copyright">
+            <nav>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="home.html" class="menu-btn">Home</a></li>
+                        <li><a href="info.html" class="menu-btn">Info Page</a></li>
+                        <li><a href="about.html" class="menu-btn">About Us</a></li>
+                        <li><a href="feedback.html" class="menu-btn">Feedback</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <h5><i class="fa fa-copyright"></i> Copyright - Don Bongolan N01026379 - Jakob Wood N01410616 - Sarah
+                Dell'Anno N01470621 - Duc Doan N01382761</h5>
+        </div>
+    </section>
+</body>
+
+</html>

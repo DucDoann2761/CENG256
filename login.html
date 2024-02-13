@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <script type="text/javascript" src="https://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="functions.js"></script>
+    <script type="text/javascript" src="login.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <section class="section-header">
+        <nav>
+            <a href="home.html"><img src="imgs/logo.png" alt="Company Logo"></a>
+            <div class="menu-links" id="menuLinks">
+                <i class="fa fa-times" id="hideMenu" alt="X icon"></i>
+                <ul>
+                    <li><a href="home.html" class="menu-btn">Home</a></li>
+                    <li><a href="info.html" class="menu-btn">Info Page</a></li>
+                    <li><a href="about.html" class="menu-btn">About Us</a></li>
+                    <li><a href="feedback.html" class="menu-btn">Feedback</a></li>
+                    <li><a href="login.html" class="login-btn">LOGIN</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" id="showMenu" alt="menu bar icon"></i>
+        </nav>
+        <hr>
+    </section>
+    <img src="imgs/back_arrow.png" alt="Back Arrow" width="65" height="65" id="back_arrow">
+    <img src="imgs/logo5.png" alt="Completely Real Icon Style Logo" width="250" height="250" id="icon_logo">
+
+    <section class="section-login" id="acc_options">
+        <div class="row">
+            <div class="login-col" id="newuserbtn">
+                <h3>New User</h3>
+            </div>
+            <div class="login-col" id="existingbtn">
+                <h3>Existing Account</h3>
+            </div>
+        </div>
+    </section>
+
+    <div class="container" id="createAcc_form">
+        <h3>Create Account</h3>
+        <form action="login_success.html" name="createAcc">
+
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" id="firstname" placeholder="Ash" />
+            <label class="error" for="firstname" id="firstname_error1">This field is required.</label>
+            <label class="error" for="firstname" id="firstname_error2">First name cannot include numbers.</label>
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Ketchum" />
+            <label class="error" for="lastname" id="lastname_error1">This field is required.</label>
+            <label class="error" for="lastname" id="lastname_error2">Last name cannot include numbers.</label>
+            <label for="newusername">User Name</label>
+            <input type="text" name="newusername" id="newusername" placeholder="ashK1996" />
+            <label class="error" for="newusername" id="newusername_error1">This field is required.</label>
+            <label class="error" for="newusername" id="newusername_error2">User Name must begin with a letter
+                (A-Z).</label>
+            <label for="email">Email</label>
+            <input type="email" name="newemail" id="newemail" placeholder="ash.ketchum@pok&eacute;.com" />
+            <label class="error" for="newemail" id="newemail_error">This field is required.</label>
+            <label for="password">Password</label>
+            <input type="password" name="newpassword" id="newpassword"
+                placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" />
+            <label class="error" for="newpassword" id="newpassword_error1">This field is required.</label>
+            <label class="error" for="newpassword" id="newpassword_error_length">Password must be 8-16
+                long.</label>
+            <label class="error" for="newpassword" id="newpassword_error_letters">Password must start with a
+                letter.</label>
+            <label class="error" for="newpassword" id="newpassword_error_number">Password must contain at least one
+                number.</label>
+            <label class="error" for="newpassword" id="newpassword_error_spec_char">Password must contain at least one
+                of the following special
+                characters (! or *).</label>
+            <input type="submit" name="newsubmit" class="button" id="newsubmit_btn" value="Create Account" />
+
+        </form>
+    </div>
+
+    <div class="container" id="create_howto">
+        <h3>Help</h3>
+        <form>
+            <p><b>Account Creation Instructions:</b><br>Enter your first name and last name at the prompt. Name must
+                consist of only
+                letters and email must be valid.<br><br> <b>Username:</b><br>Username must begin with a letter
+                (A-Z).<br><br> <b>Password:</b><br>
+                Password must start with a letter, be between 8-16 characters long, contain at least 1 number, and
+                contain at least one special
+                character (either ! or *).
+            </p>
+        </form>
+    </div>
+
+    <div class="container" id="login_form">
+        <h3>Login</h3>
+        <form action="login_success.html" name="login">
+            <label for="login_username">User Name</label>
+            <input type="text" name="login_username" id="login_username" placeholder="ashK1996" />
+            <label class="error" for="login_username" id="loginusername_error">This field is required.</label>
+            <label for="loginpassword">Password</label>
+            <input type="password" name="loginpassword" id="loginpassword"
+                placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" />
+            <label class="error" for="loginpassword" id="loginpassword_error">This field is required.</label>
+            <input type="submit" name="loginsubmit" class="button" id="loginsubmit_btn" value="Login" />
+
+        </form>
+    </div>
+
+    <div class="container" id="login_howto">
+        <h3>Help</h3>
+        <form>
+            <p><b>Login Instructions:</b><br>Enter your CR Studio username and password at the prompt, and click the
+                "Login" button.
+                <br>Enter your credentials carefully, as your password will contain letters, numbers, and
+                <br>symbols (either ! or *).<br><br> <b>Forgotten User/Password?</b><br>Please email our
+                <a style=" white-space:nowrap; " href="mailto:devteam.completelyreal@gmail.com">Development Team</a> at
+                for any
+                issues logging in. We will get back to you as soon as we can.
+            </p>
+        </form>
+    </div>
+
+    <section class="section-footer">
+        <div class="icons">
+            <i class="fa fa-facebook" alt="facebook icon"></i>
+            <i class="fa fa-instagram" alt="instagram icon"></i>
+            <i class="fa fa-twitter" alt="twitter icon"></i>
+            <i class="fa fa-linkedin" alt="linkedin icon"></i>
+            <i class="fa fa-envelope" alt="mail icon"></i>
+        </div>
+        <div class="copyright">
+            <nav>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="home.html" class="menu-btn">Home</a></li>
+                        <li><a href="info.html" class="menu-btn">Info Page</a></li>
+                        <li><a href="about.html" class="menu-btn">About Us</a></li>
+                        <li><a href="feedback.html" class="menu-btn">Feedback</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <h5><i class="fa fa-copyright"></i> Copyright - Don Bongolan N01026379 - Jakob Wood N01410616 - Sarah
+                Dell'Anno N01470621 - Duc Doan N01382761</h5>
+        </div>
+    </section>
+</body>
+
+</html>

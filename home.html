@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewpoint" content="width=device-width, intial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slideshow.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <section class="section-header">
+        <nav>
+            <a href="home.html"><img src="imgs/logo.png" alt="Company Logo"></a>
+            <div class="menu-links" id="menuLinks">
+                <i class="fa fa-times" id="hideMenu" alt="X icon"></i>
+                <ul>
+                    <li><a href="home.html" class="menu-btn">Home</a></li>
+                    <li><a href="info.html" class="menu-btn">Info Page</a></li>
+                    <li><a href="about.html" class="menu-btn">About Us</a></li>
+                    <li><a href="feedback.html" class="menu-btn">Feedback</a></li>
+                    <li><a href="login.html" class="login-btn">LOGIN</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" id="showMenu" alt="menu bar icon"></i>
+        </nav>
+        <hr>
+    </section>
+
+
+    <section class="section-slideshow">
+        <!-- Slideshow container -->
+        <div class="section-slideshow">
+
+            <div class="mySlides fade">
+                <img class="slides" src="imgs/img_slide5.jpg" alt="image of Retro Computer Setup">
+            </div>
+
+            <div class="mySlides fade">
+                <img class="slides" src="imgs/img_slide4.jpg" alt="image of Computer Desk Setup">
+            </div>
+
+            <div class="mySlides fade">
+                <img class="slides" src="imgs/img_slide6.jpg" alt="image of Neon blue and pink lights">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- The indicators -->
+            <div class="indicator-position">
+                <span class="indicator" onclick="currentSlide(1)"></span>
+                <span class="indicator" onclick="currentSlide(2)"></span>
+                <span class="indicator" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-info">
+        <h1>Go beyond what's unreal.</h1>
+
+    </section>
+
+    <section class="section-images">
+        <div class="row">
+            <div class="images-col">
+                <img src="imgs/img_home1.jpg" alt="Game On image">
+            </div>
+            <div class="imagesinfo-col">
+                <h1>Create.</h1>
+                <p>At Completely Real Studios, we create games for gamers, with gamers, by gamers. <br><br>
+                    Check out our catalog of AAA game titles! From high fantasy thrillers, to laid back simulations, we have games for all types of players. <br><br>
+                    Whether you're relaxing on the couch or striving to be the very best, we have the games for you! Go beyond what's unreal and browse our catalog today. <br><br>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="imagesinfo-col">
+                <h1>Adapt.</h1>
+                <p>We'd like to hear from you! <br><br>
+                    At the heart of every great game is a passionate and supportive community. At Completely Real Studios, we value the voices of our community members. <br><br>
+                    Find a few bugs during one of your playthroughs? Maybe you have some interesting features in mind that would take our game to another dimension. <br><br>
+                    Let us hear it! We want to make the games you want to play!<br><br>
+                </p>
+            </div>
+            <div class="images-col">
+                <img src="imgs/img_home2.jpg" alt="Level Up image">
+            </div>
+        </div>
+        <div class="row">
+            <div class="images-col">
+                <img src="imgs/img_home3.jpg" alt="Do What You Love image">
+            </div>
+            <div class="imagesinfo-col">
+                <h1>Evolve.</h1>
+                <p>Do you like puzzles? Do you like adventure? Do you like controlling universes in the palm of your hand? <br><br>
+                    If you answered yes to any of those questions, consider joining the Completely Real team! <br><br>
+                    At Completely Real Studios, we're always looking for new team members to help push past what's unreal. <br><br>
+                    Help create games for gamers, with gamers, by gamers.<br><br>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-contact">
+        <h1>Join our Dev Team!</h1>
+        <a href="" class="contact-btn" onclick="location.href='mailto:devteam.completelyreal@gmail.com';">CONTACT US</a>
+    </section>
+
+    <section class="section-footer">
+        <div class="icons">
+            <i class="fa fa-facebook" alt="facebook icon"></i>
+            <i class="fa fa-instagram" alt="instagram icon"></i>
+            <i class="fa fa-twitter" alt="twitter icon"></i>
+            <i class="fa fa-linkedin" alt="linkedin icon"></i>
+            <i class="fa fa-envelope" alt="mail icon"></i>
+        </div>
+        <div class="copyright">
+            <nav>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="home.html" class="menu-btn">Home</a></li>
+                        <li><a href="info.html" class="menu-btn">Info Page</a></li>
+                        <li><a href="about.html" class="menu-btn">About Us</a></li>
+                        <li><a href="feedback.html" class="menu-btn">Feedback</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <h5><i class="fa fa-copyright"></i> Copyright - Don Bongolan N01026379 - Jakob Wood N01410616 - Sarah
+                Dell'Anno N01470621 - Duc Doan N01382761</h5>
+        </div>
+    </section>
+
+    <script src="functions.js"></script>
+</body>
+
+</html>
